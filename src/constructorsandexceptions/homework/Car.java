@@ -1,4 +1,4 @@
-package constructorsandexceptions;
+package constructorsandexceptions.homework;
 
 public class Car {
 
@@ -43,5 +43,6 @@ public class Car {
     public static void main(String[] args) {
 
         Car car = new Car();
+        Car car1 = new Car("Peugeot 208",2020,75,false,"yellow");
     }
 }

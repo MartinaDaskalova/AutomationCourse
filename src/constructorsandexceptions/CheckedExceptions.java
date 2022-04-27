@@ -1,9 +1,6 @@
 package constructorsandexceptions;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class CheckedExceptions {
 
@@ -14,4 +11,5 @@ public class CheckedExceptions {
 
 
     }
+
 }
