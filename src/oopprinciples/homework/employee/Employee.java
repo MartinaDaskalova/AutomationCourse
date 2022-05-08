@@ -18,11 +18,30 @@ public class Employee {
         return firstName + ' ' + lastName;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getAnnualSalary() {
+        return salary * 12;
     }
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void raiseSalary(double raisePercentage){
+        double increase = (salary * raisePercentage)/100;
+        this.salary += increase;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
